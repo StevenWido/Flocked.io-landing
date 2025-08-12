@@ -1,0 +1,30 @@
+/* Quick fix for Vercel deployment - Add to your styles.css */
+
+/* Ensure CSS variables are defined with fallbacks */
+.btn-primary {
+    background: #D6FE9B !important; /* Direct hex fallback */
+    background: var(--flocked-neon-green, #D6FE9B) !important;
+    color: #003C3C !important;
+    color: var(--flocked-dark-teal, #003C3C) !important;
+}
+
+.btn-primary:hover {
+    filter: brightness(0.92);
+    transform: translateY(-1px);
+}
+
+/* Ensure neon green is used for all primary elements */
+.hero-title,
+.section-title,
+.stat-number,
+.cta-content h2,
+.footer-section h4 {
+    color: #D6FE9B !important;
+    color: var(--flocked-neon-green, #D6FE9B) !important;
+}
+
+/* Feature icon boxes */
+.feature-icon {
+    background: #D6FE9B !important;
+    background: var(--flocked-neon-green, #D6FE9B) !important;
+}
