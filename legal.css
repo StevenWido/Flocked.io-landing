@@ -1,0 +1,112 @@
+/* Legal Pages Styling - Inherits Flocked Brand Design */
+.legal-content {
+    padding: 5rem 0;
+    min-height: calc(100vh - 200px);
+    background: var(--background);
+}
+
+.legal-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--flocked-neon-green);
+    letter-spacing: -0.02em;
+}
+
+.legal-date {
+    color: var(--muted-foreground);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+    font-weight: 400;
+}
+
+.legal-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    color: var(--flocked-neon-green);
+    letter-spacing: -0.01em;
+}
+
+.legal-content h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--foreground);
+    letter-spacing: -0.01em;
+}
+
+.legal-content p {
+    color: var(--foreground);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.legal-content ul {
+    margin-left: 2rem;
+    margin-bottom: 1.25rem;
+    color: var(--foreground);
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.legal-content ul li {
+    margin-bottom: 0.6rem;
+    font-weight: 400;
+}
+
+.legal-content strong {
+    color: var(--flocked-sky-blue);
+    font-weight: 600;
+}
+
+/* Links in legal content */
+.legal-content a {
+    color: var(--flocked-sky-blue);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.legal-content a:hover {
+    color: var(--flocked-neon-green);
+    text-decoration: underline;
+}
+
+/* Responsive for legal pages */
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 3rem 0;
+    }
+    
+    .legal-content h1 {
+        font-size: 2.25rem;
+    }
+    
+    .legal-content h2 {
+        font-size: 1.75rem;
+        margin-top: 2.5rem;
+    }
+    
+    .legal-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .legal-content ul {
+        margin-left: 1.5rem;
+    }
+    
+    .legal-wrapper {
+        padding: 0 20px;
+    }
+}
